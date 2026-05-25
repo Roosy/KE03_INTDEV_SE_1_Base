@@ -1,0 +1,67 @@
+﻿@page
+@model KE03_INTDEV_SE_1_Base.Pages.categorieModel
+@{
+    ViewData["Title"] = "Categorie";
+}
+
+<h1>Product</h1>
+<p class="intro">Zoek een product en voeg het toe aan de karretje.</p>
+
+<div class="filters">
+    <input id="searchInput" type="text" placeholder="Zoek op naam of productnummer">
+
+    <select id="categorySelect">
+        <option value="alles">Alle categories</option>
+        <option value="mechanisch">Mechanisch</option>
+        <option value="gereedschap">Gereedschap</option>
+    </select>
+</div>
+
+<div class="toast-message hidden" id="toast"></div>
+
+<section class="product-grid" id="productList">
+    <article class="product-card" data-name="tandwiel staal" data-number="P001" data-category="mechanisch">
+        <div class="product-photo">Tandwiel</div>
+        <h2>Tandwiel staal</h2>
+        <p>Productnummer: P001</p>
+        <p>Mechanisch onderdeel voor aandrijving.</p>
+        <p class="price">&euro;24,95</p>
+        <button class="add-button" data-id="P001" data-name="Tandwiel staal" data-price="24.95">+</button>
+    </article>
+
+    <article class="product-card" data-name="m5 boutjes set" data-number="P002" data-category="mechanisch">
+        <div class="product-photo">Boutjes</div>
+        <h2>M5 Boutjes set</h2>
+        <p>Productnummer: P002</p>
+        <p>Set boutjes voor montage.</p>
+        <p class="price">&euro;8,50</p>
+        <button class="add-button" data-id="P002" data-name="M5 Boutjes set" data-price="8.50">+</button>
+    </article>
+
+    <article class="product-card" data-name="hydraulische cilinder" data-number="P003" data-category="mechanisch">
+        <div class="product-photo">Cilinder</div>
+        <h2>Hydraulische cilinder</h2>
+        <p>Productnummer: P003</p>
+        <p>Onderdeel voor zware bewegingen.</p>
+        <p class="price">&euro;89,95</p>
+        <button class="add-button" data-id="P003" data-name="Hydraulische cilinder" data-price="89.95">+</button>
+    </article>
+
+    <article class="product-card" data-name="koelvloeistofpomp" data-number="P004" data-category="mechanisch">
+        <div class="product-photo">Pomp</div>
+        <h2>Koelvloeistofpomp</h2>
+        <p>Productnummer: P004</p>
+        <p>Pomp voor koeling van systemen.</p>
+        <p class="price">&euro;54,95</p>
+        <button class="add-button" data-id="P004" data-name="Koelvloeistofpomp" data-price="54.95">+</button>
+    </article>
+
+    <article class="product-card" data-name="momentsleutel" data-number="P005" data-category="gereedschap">
+        <div class="product-photo">Tool</div>
+        <h2>Momentsleutel</h2>
+        <p>Productnummer: P005</p>
+        <p>Gereedschap voor gecontroleerd vastzetten.</p>
+        <p class="price">&euro;39,95</p>
+        <button class="add-button" data-id="P005" data-name="Momentsleutel" data-price="39.95">+</button>
+    </article>
+</section>

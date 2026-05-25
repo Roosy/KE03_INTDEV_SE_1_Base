@@ -8,12 +8,12 @@
 </head>
 <body>
     <header class="topbar">
-        <a class="brand" href="/">Matrix INC.</a>
+        <a class="brand" asp-page="/Index">Matrix INC.</a>
 
         <nav>
-            <a href="/">Home</a>
-            <a href="/Catalog">Catalogus</a>
-            <a href="/Orderhistorie">Orderhistorie</a>
+            <a asp-page="/Index">Home</a>
+            <a asp-page="/Catalog">Catalogus</a>
+            <a asp-page="/Orderhistorie">Orderhistorie</a>
         </nav>
     </header>
 
@@ -21,7 +21,7 @@
         @RenderBody()
     </main>
 
-    <a class="cart-button" href="/Bestelling" aria-label="Winkelwagen">
+    <a class="cart-button" asp-page="/Bestelling" aria-label="Winkelwagen">
         &#128722;
         <span id="cartCount">0</span>
     </a>

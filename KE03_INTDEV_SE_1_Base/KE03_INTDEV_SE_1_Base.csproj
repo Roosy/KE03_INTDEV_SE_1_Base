@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\layout.cshtml.cs" />
+    <Compile Remove="Pages\Shared\categories.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,24 @@
+﻿@page
+@model KE03_INTDEV_SE_1_Base.Pages.orderhistorieModel
+@{
+    ViewData["Title"] = "Orderhistorie";
+}
+
+<h1>Orderhistorie</h1>
+<p class="intro">Hier ziet de klant zijn geplaatste bestellingen.</p>
+
+<div class="empty-message hidden" id="emptyHistory">
+    Er zijn nog geen bestellingen geplaatst.
+</div>
+
+<table class="cart-table hidden" id="historyTable">
+    <thead>
+        <tr>
+            <th>Ordernummer</th>
+            <th>Datum</th>
+            <th>Producten</th>
+            <th>Totaal</th>
+        </tr>
+    </thead>
+    <tbody id="historyLines"></tbody>
+</table>
